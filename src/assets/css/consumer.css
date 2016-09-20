@@ -1,0 +1,16 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: #4F534E;
+    padding: 20px;
+}
+
+label{
+    padding-right: 5px;
+}
+
+.cell {
+    height: 200px;
+    padding: 20px;
+}

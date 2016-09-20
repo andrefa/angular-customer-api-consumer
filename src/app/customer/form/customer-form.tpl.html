@@ -1,0 +1,64 @@
+​<form class="form-horizontal">
+  <fieldset>
+    <legend>Customer</legend>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Name</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Email</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="Email" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Phone</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="Phone" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.phone">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Address</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="Address" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.address">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Zipcode</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="Zipcode" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.zipcode">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">City</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="City" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.city">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">State</label>
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="text" placeholder="State" class="form-control input-md" required="" ng-model="customerFormCtrl.customer.state">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="button1id"></label>
+      <div class="col-md-8">
+        <button id="button1id" name="button1id" class="btn btn-success" ng-click="customerFormCtrl.save()">Save</button>
+        <button id="Cancel" name="Cancel" class="btn btn-warning" ng-click="customerFormCtrl.listCustomers()">Cancel</button>
+        <button id="remove" name="Remove" class="btn btn-danger" ng-click="customerFormCtrl.remove()" ng-if="customerFormCtrl.customer.id">Remove</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
